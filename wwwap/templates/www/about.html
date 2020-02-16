@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+    .c0ntainer {
+        position: relative;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #343a40;
+    }
+
+    .c0ntainer:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="top"></div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>This is about me and this project</h1>
+    </div>
+    {% include "www/navbar.html" %}
+    <div class="container pt-3" style="padding: 16px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="c0ntainer">
+                    <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/984064_1134465073276339_3495605834670584840_n.jpg?_nc_cat=110&_nc_oc=AQmXJfZxS-HMAULSL0QH10AbFWEzXt2_Mjga9OkBcqwm3awfl_U4n1MuyNCGY7ahSOY&_nc_ht=scontent-lhr8-1.xx&oh=61b09fc442e98b539d22e5220da8162e&oe=5E68DFEA" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <div class="text">Hi There!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="container pt-3">
+                    <div>
+                        <h2>About Me:</h2>
+                        <div><br> </div>
+                        <p>My name is Artur Jasinski.</p>
+                        <p>In 2013 I decided to move from Poland to United Kingdom with my family. From 7 years Bedford is our hometown.
+                        There was few reasons why I moved. Opportunity to learn English language, first job, better salary.
+                        I started my work career in surrounding Bedford warehouses. Very quickly I understood that my potential is a lot higher than performing employers targets as pulling pumptruck and picking products all day.
+                        Few weeks later I decided to invest in myself and I passed Reach Truck/ Counter balance exam, it gave me licence which allowed me to make my job easier and earn a bit more.
+                        I wasn't still proud of myself, truck become very easy to use in few months and I still had feeling that I again stopped improving myself and I'm just consuming time, then my manager decided to give me chance. I got promoted to warehouse coordinator.
+                        This role was exciting me. I had finally possibility to improve my English and window for new opportunities, which I never think about before, as for example Manager position.
+                        Each day brought me new challenges and responsibilities. I started to feeling that I finally mean something for someone, but I wasn't fully happy of this position. My manager gave me priceless advice "Artur maybe try coding" as he started it recently too.
+                        I agreed, and tested it, then decided that this is what I want to do for rest of my life. I don't want to stop, I want to improve and prove it!
+                        </p>
+                        <p>Please Register and Login to see my entire project.</p>
+                        <p ALIGN=RIGHT>Sincerely</p>
+                        <p ALIGN=RIGHT>Artur Jasinski</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "www/footer.html" %}
+</body>
+</html>

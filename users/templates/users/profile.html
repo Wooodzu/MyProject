@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
+
+</head>
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>{{ user.username }}</h1>
+        <p>I'm happy to see you</p>
+    </div>
+    {% include "www/navbar.html" %}
+    <div class="container" style="padding: 26px;">
+        <div class="card" style="padding: 40px;">
+            <h2 class="account-heading" style="text-align: end;">{{ user.username }}</h2>
+            <p class="text-secondary" style="text-align: end;">{{ user.email }}</p>
+            <div class="border-top pt-3"></div>
+            I'm very happy that I was able to do this entire project by myself.
+            Level of this project is equivalent to my experience in web development. I hope is high enough for you to contact with me and invite me to your team.
+            This is beginning of my journey with programming and I'm sure now. I love to do it ! I have got a lot more advanced plans with Python, as Machine Learning, Data Analysis or Automation.
+            I chose to write web applications, I think this way is the fastest way to start professionally develop in programming and get to programmers environment.
+            <p>Why me?</p>
+            <p>- I'm sure that you will be happy of my motivation and willing to learn more new technics and technologies.</p>
+            <p>- I'm consistent, every day I'm spending all my spare time to learn, improve my code and implement new features.</p>
+            <p>- I am distinguished by high personal culture and easy to establish contacts. I also do not have a problem with working in a team - this is proved by my current position as a warehouse coordinator.</p>
+            <p>- I'm punctual and accurate- Never had issues with self discipline, I'm paying a lot of attention to details.  </p>
+            <p>I hope that I will be able to meet you personally to present my knowledge and the most important skills that I will use in your company as a very motivated coder.</p>
+            <div class="border-top pt-3"></div>
+        </div>
+    </div>
+    {% include "www/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+      <h2>You have been logged out </h2>
+      <p>See you soon!</p>
+    </div>
+    <div class="container"><br>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+               Log In Again
+            </small> <a class="ml-2" href="{% url 'login' %}">Login Now</a>
+            <small class="text-muted">
+               ,or go back to
+            </small> <a class="ml-2" href="{% url 'www-home' %}">Homepage</a>
+        </div>
+    </div>
+</body>
+</html>

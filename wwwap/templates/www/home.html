@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="top"></div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Welcome to my Project!</h1>
+    </div>
+    {% include "www/navbar.html" %}
+    {% if messages %}
+    {% for message in messages%}
+    <div class="alert alert-{{ message.tags }}">
+        {{message}}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <div class="text-center" style="padding-top: 20px;">
+        <h4>Hello! On this website I would like to share with you my experience!
+            <p> How did I get into this point and let you know, that you can do it too!!!</p>
+        </h4>
+        <h5> To build this website I was based on five main things. Each point from list below was crucial for me.</h5>
+    </div>
+    <div class="container" style="margin-top:30px">
+        <div class="card" style="margin-top: 20px; margin-bottom: 20px; width: 100%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://docs.djangoproject.com/en/3.0/intro/" title="more about the python">
+                        <img src="https://seeklogo.net/wp-content/uploads/2012/10/python-logo-vector.png" alt="Avatar" class="image">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Python</h2>
+                        It is a clear and legible language which facilitates work and learning for beginners.
+                        Python ranks 2nd on the list of the best programming languages, which is another strong argument!
+                        The biggest platforms like Spotify, Netflix, Dropbox, Youtube uses this language, and that even makes me more excited to start with it!
+                        Programming in Python has many possibilities and applications: Arduino or Raspberry Pi, Cybersecurity, IoT, Marketing (information analysis), Statistics, Machine Learning, AI and Web development.
+                        To start this project I just needed Django (Framework) which Python offers. Thanks to this, I started my first real project! When I was coming to finishing writing Backend I understand that I have to start learning and writing basics in HTML5 to get visual output of my job.
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card " style="margin-top: 20px; margin-bottom: 20px; width: 100%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://www.w3schools.com/html/" title="more about the HTML5">
+                        <img src="https://wpthemify.com/html/wp-content/uploads/2019/02/html5-logo-300.png" alt="Avatar" class="image">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>HTML 5</h2>
+                        <p>What exactly is HTML5? HyperText Markup Language is a so-called hypertext language that describes the contents of the document format, such as a font or paragraph.
+                            HTML is used when creating websites. HTML has a so-called skeleton. Thanks to which the order of information and composition of our site should always be the same.
+                            When all information and data are applied in our website we need to take care of appearance. In my case I used Bootstrap 4 which is the best framework in my opinion to help you with design!
+                            <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 20px; margin-bottom: 20px; width: 100%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" title="more about the Bootstrap 4">
+                        <img src="https://site2img-api.herokuapp.com/parse/files/MqX4RIjBpnVgUg9lRrxmWRsDVmqR5SCOaYmnSpnx/2ba43291aa42c2e1e11e268e780a5e96_img.png" alt="Avatar" class="image">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Bootstrap 4</h2>
+                        <p>Bootstrap is a free collection of tools for creating a websites and web applications.
+                            It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components.
+                            The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project.
+                            As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements.
+                            <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 20px; margin-bottom: 20px; width: 100%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://www.youtube.com" title="Youtube">
+                        <img src="https://pmcdeadline2.files.wordpress.com/2019/06/you-tube-new-logo.jpg?w=681&h=383&crop=1" alt="Avatar" class="image">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Youtube</h2>
+                        It seems to me that without youtube I would not have reached this level so quickly and wouldn't be proud of my project.
+                        Thanks to a lot of information I learned in and gained from instructional videos, tutorials how to start programming in Python and how to use Django.
+                        I decided to write my first project from scratch.
+                        <p>The below channels helped me a lot and were crucial for me:</p>
+                        <p>- <a href="https://www.youtube.com/user/schafer5/featured">Corey Schafers</a></p>
+                        <p>- <a href="https://www.youtube.com/user/sentdex/featured"> sentdex </a></p>
+                        <p>- <a href="https://www.youtube.com/user/programmingwithmosh/featured"> Programming with Mosh </a></p>
+                        <p>- and a lot more which I'm very thankful !</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 20px; margin-bottom: 20px; width: 100%; background-colour: black ">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://www.google.com" title="Google">
+                        <img src="https://static.dezeen.com/uploads/2015/09/New-Google-logo_Dezeen_sq-300x300.jpg" alt="Avatar" class="image">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Google</h2>
+                        <p>Internet search engine created by the American company Google Inc. Its purpose is to catalog all possible information and make it available via the Internet.
+                            Thanks to google I was able to search all the information, when I didn't know how to write the code correctly or I lacked knowledge.
+                            Using Google is necessary and very simple, it brings a quick and the accurate answers.Community of programmers who are helping and guiding is very rich, thats why google is so powerful tool.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% include "www/footer.html" %}
+</body>
+</html>
