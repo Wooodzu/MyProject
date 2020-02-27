@@ -31,7 +31,7 @@ def _send_email(email_form):
     send_mail(
         f'Contact message from website',
         f'Message from {name} {surname}.\n{message}\nE-mail:{email}',
-        email,
-        ['pythondjangowww@gmail.com'],
+        'django_app@int.pl',
+        ['django_app@int.pl'],
         fail_silently=False
     )
